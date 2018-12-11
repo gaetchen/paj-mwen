@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 oct. 2018, 13:17:17
+    Author     : gaetchen
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+ background-image:url("/imagen/foto.jpg"); 
+-webkit-background-size: cover;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+height: 100vh;
+
+}
+
+
+.menu-area ul{
+    list-style: none;
+}
+.menu-area ul li{
+    display: inline-block;
+}
+.menu-area ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    display: inline-block;
+    padding: 15px 20px;
+}
+.menu-area ul li a:hover{
+    text-decoration: none;
+    background: #333;
+}
+.menu-area ul li a:focus{
+    text-decoration: none;
+}
+.menu-area{
+     background-image: url("imagen/foto.jpg");
+    /background: #e42652;
+}
+.toggle-menu{
+    display: none;
+    cursor: pointer;
+    padding: 20px;
+    text-align: right;
+    font-size:25px;
+    color: #fff;    
+}
+@media screen and(max-width:60px){
+    .menu-area ul li{
+     display: block;   
+    }  
+    .menu-area ul li a{
+        display: block
+    }
+    .menu-area ul{
+        display: none;
+    }
+    .toggle-menu{
+        display: block;
+    }
+}
